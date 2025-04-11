@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket System</title>
+    <link rel="stylesheet" href="css.css">
+    <script defer src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Support System</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Need Assistance?</h1>
+        <p>Submit a support ticket and our team will assist you.</p>
+        <a href="#supportForm" class="btn">Submit Ticket</a>
+    </section>
+
+    <div class="container">
+        <h2>Submit a Support Ticket</h2>
+        <form id="supportForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="category">Issue Category:</label>
+            <select id="category">
+                <option>Login Issue</option>
+                <option>Payment Issue</option>
+                <option>Technical Issue</option>
+                <option>Others</option>
+            </select>
+
+            <label for="description">Issue Description:</label>
+            <textarea id="description" required></textarea>
+
+            <button type="submit">Submit Ticket</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+</body>
+</html>
